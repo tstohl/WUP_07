@@ -86,8 +86,19 @@ Men died approximately twice as frequently as the women did for covid-19 related
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 0.0009. This is an awfully small number-about 1 in a thousand. seeing this number means that these results are not likely to occur by chance and so the null hypothesis can be rejected in favor of the alternative. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation, is the favorable option.
+
+Like the odd ratio above illustates, men died of covid-19 related issues 2.3 times more frequently than women did.
 
 
 ## Conclusions
+
+
+
 
