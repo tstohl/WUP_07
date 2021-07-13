@@ -65,12 +65,23 @@ barchartGC(~result + sex,data=kRdata, type="percent")
 
 ``` 
 
-based on what can be seen in the percentage plot obove, it appears that approximately 60% of male participants died, whereas only about 40% of female participants died. 
+based on what can be seen in the percentage plot obove, it appears that approximately 60% of males died as a result of covid-19 related issues, whereas only about 40% of female participants died for the same reasons.
 
 
 
   
 ## Numerical results
+
+
+```{r}
+table1 <- xtabs(~result + sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+These numerical results show specific percentages. The percentage of men that dies due to covid-19 related issues appears to be 64%, and the deaths among women for the same reason was only at 36%. 
+Men died approximately twice as frequently as the women did for covid-19 related issues.
+
 
 
 ## Inferential results 
