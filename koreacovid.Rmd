@@ -71,7 +71,7 @@ based on what can be seen in the percentage plot obove, it appears that approxim
 
 The codes that  create these plots start with the code block beginning with dd2. dd2 can be seen in the environment pane and if inspected contains 4 variables.These variables include result, sex, count, and prcent(stands for percent). The second group of codes is called the basicC. BasicC can also be seen in the environment pane and appears to contain a list of 9 variables. This information creates the first plot. The basicCC is the last bunch of codes and is also in the files pane. It also contains 9 variables and helps to create the percentage plot, the first plot with bolder colors. 
 
-The first set of barplot is a frequency plot ans the second set of plots are the percentage plots. 
+The first set of barplot is a frequency plot and the second set of plots are the percentage plots. The second set of plots uses the ggplot R command. These are the charts with the pastel colors and are just above this text.  
 
 
 
@@ -84,7 +84,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-These numerical results show specific percentages. The percentage of men that died due to covid-19 related issues appears to be 64%, and the deaths among women for the same reason was only at 36%. The ratio of deaths among men and women is about 2:1. Men died approximately twice as frequently as the women did for covid-19 related issues.
+These numerical results show specific percentages of deaths among men and women from the data from South Korea. The percentage of men that died due to covid-19 related issues appears to be 64%, and the deaths among women for the same reason was only at 36%. The ratio of deaths among men and women is about 2:1. Men died approximately twice as frequently as the women did for covid-19 related issues. According to the null, these results were not expected. 
 
 
 
