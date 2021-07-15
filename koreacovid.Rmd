@@ -65,11 +65,16 @@ barchartGC(~result + sex,data=kRdata, type="percent")
 
 ``` 
 
+
 based on what can be seen in the percentage plot obove, it appears that approximately 60% of males died as a result of covid-19 related issues, whereas only about 40% of female participants died for the same reasons.
 
 
+The codes that  create these plots start with the code block beginning with dd2. dd2 can be seen in the environment pane and if inspected contains 4 variables.These variables include result, sex, count, and prcent(stands for percent). The second group of codes is called the basicC. BasicC can also be seen in the environment pane and appears to contain a list of 9 variables. This information creates the first plot. The basicCC is the last bunch of codes and is also in the files pane. It also contains 9 variables and helps to create the percentage plot, the first plot with bolder colors. 
 
-  
+The first set of barplot is a frequency plot ans the second set of plots are the percentage plots. 
+
+
+
 ## Numerical results
 
 
@@ -79,8 +84,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-These numerical results show specific percentages. The percentage of men that dies due to covid-19 related issues appears to be 64%, and the deaths among women for the same reason was only at 36%. 
-Men died approximately twice as frequently as the women did for covid-19 related issues.
+These numerical results show specific percentages. The percentage of men that died due to covid-19 related issues appears to be 64%, and the deaths among women for the same reason was only at 36%. The ratio of deaths among men and women is about 2:1. Men died approximately twice as frequently as the women did for covid-19 related issues.
 
 
 
@@ -92,12 +96,16 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 0.0009. This is an awfully small number-about 1 in a thousand. seeing this number means that these results are not likely to occur by chance and so the null hypothesis can be rejected in favor of the alternative. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation, is the favorable option.
+The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 0.0009. This is an awfully small number-about 1 in a thousand. seeing this number means that these results are not likely to occur by chance and so the null hypothesis can be rejected in favor of the alternative. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covi-19 deaths and sex, is the favorable option.
 
-Like the odd ratio above illustates, men died of covid-19 related issues 2.3 times more frequently than women did.
+Like the odd ratio above illustrates, men died of covid-19 related issues 2.3 times more frequently than women did.
 
 
 ## Conclusions
+
+
+In conclusion, it is proven with this report that in this data from South Korea, men died 2.3 times as frequently as women did due to covid-19 related issues. Women somehow were much more impervious to the effects of covid-19 than men were. The null hypothesis that stated that sex and covid-19 deaths are independent is rejected. The p-value was at a low 0.0009. This is about 1 in a thousand chance, these results are highly unlkely to occur by chance. The alternative hypothesis, that covid-19 related death and sex are correlated is the favorable hypothesis.
+
 
 
 
